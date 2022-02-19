@@ -126,6 +126,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         List<String> skipPathList = new ArrayList<>();
 
         // Static 정보 접근 허용
+        skipPathList.add("GET,/**");
+        skipPathList.add("POST,/**");
         skipPathList.add("GET,/images/**");
         skipPathList.add("GET,/css/**");
 
@@ -137,6 +139,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         skipPathList.add("POST,/user/signup");
 
         skipPathList.add("GET,/api/**");
+        skipPathList.add("GET,/chat/**");
+        skipPathList.add("GET,/pub/**");
+        skipPathList.add("GET,/sub/**");
 
         skipPathList.add("GET,/");
         skipPathList.add("GET,/basic.js");

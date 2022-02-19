@@ -1,7 +1,6 @@
 package com.example.cloneslack.domain;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
